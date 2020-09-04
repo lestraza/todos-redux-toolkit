@@ -3,8 +3,6 @@ export interface IState {
     error?: string;
     isLoading?: boolean;
     isShowModal?: boolean;
-    selectedId?: number | undefined;
-    editingTodo?: ITodo | undefined;
 }
 
 export interface ITodo {

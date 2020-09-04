@@ -7,9 +7,7 @@ const initialState: IState = {
     todos: [],
     isLoading: false,
     error: "",
-    isShowModal: false,
-    selectedId: undefined,
-    editingTodo: undefined,
+    isShowModal: false
 };
 
 const reducer = createSlice({
@@ -24,9 +22,6 @@ const reducer = createSlice({
         },
         removeError: (state: IState, action: IActionType) => {
             state.error = "";
-        },
-        isEdititing: (state: IState, { payload }: IActionType) => {
-            state.editingTodo = payload?.editingTodo;
         },
         showModal: (state: IState, action: IActionType) => {
             state.isShowModal = !state.isShowModal;
